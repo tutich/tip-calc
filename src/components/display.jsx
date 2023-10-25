@@ -18,7 +18,7 @@ const Display = () => {
                     <p className="value">$0.00</p>
                 </div>
             </div>
-            <btn className="btn">Reset</btn>
+            <button className="btn">Reset</button>
          </div>
         </div>
     )

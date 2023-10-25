@@ -8,12 +8,13 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
-      <div className='container'>
-        <div className='form'>
-
+      <div class="wrapper">
+        <div className='container'>
+          <div className='form'>
+          </div>
+          <Form />
+          <Display />
         </div>
-        <Form />
-        <Display />
       </div>
       
     </div>
