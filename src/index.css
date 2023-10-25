@@ -17,8 +17,59 @@ background-color: hsl(185, 41%, 84%);
   display: grid;
   place-items: center;
   gap: 4rem;
-}
+  }
 .container {
   background: hsl(0, 0%, 100%);
+  padding: clamp(2rem, 3rem, 4rem);
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem hsl(183, 100%, 15%);
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+.form{
 
 }
+.display{
+background: hsl(183, 100%, 15%);
+padding: 1rem;
+border-radius: 1.2rem;
+}
+
+
+.display-grp {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.header{
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+}
+.unit {
+  color: hsl(185, 41%, 84%);
+  font-size: 10px;
+}
+.btn {
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+background: hsl(172, 67%, 45%);
+text-transform: uppercase;
+font: inherit;
+border-radius: 0.4em;
+width: 13rem;
+color: hsl(186, 14%, 43%);
+margin-top: 3em;
+font-size: 15px;
+transition: transform 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1); /* Enlarge the button by 10% on hover */
+}
+.btn [:disabled] {
+  opacity: .4;
+}
+.value{
+ color: hsl(172, 67%, 45%);
+ font-weight: 700;
+}
+
