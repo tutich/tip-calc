@@ -10,8 +10,15 @@
 body {
 font-size: 24px;
 font-family: 'Space Mono';
+background-color: hsl(185, 41%, 84%);
 }
 
-:root {
+.wrapper{
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+}
+.container {
+  background: hsl(0, 0%, 100%);
 
 }
