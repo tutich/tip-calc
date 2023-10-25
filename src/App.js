@@ -12,8 +12,8 @@ function App() {
         <div className='form'>
 
         </div>
-        <Display />
         <Form />
+        <Display />
       </div>
       
     </div>
