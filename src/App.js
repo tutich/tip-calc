@@ -13,6 +13,7 @@ function App() {
 
         </div>
         <Display />
+        <Form />
       </div>
       
     </div>
