@@ -193,7 +193,7 @@ pointer-events: none;
 
 .tip-btn {
   background-color: hsl(183, 100%, 15%);
-  color: hsl(172, 67%, 45%);
+  color: hsl(189, 41%, 97%);
   text-align: center;
   border-radius: 8px;
   padding: .2rem;
@@ -207,4 +207,14 @@ pointer-events: none;
   .container {
     grid-auto-flow: column;
   }
+}
+@media screen and(max-width: 768px) {
+  .container{
+    display: block;
+  }
+}
+  
+
+.log{
+  margin: 2em;
 }
