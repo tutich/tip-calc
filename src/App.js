@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { useEffect } from 'react';
 import './App.css';
 import logo from './components/images/logo.svg';
@@ -28,28 +29,26 @@ function App() {
     setTotal(0);
   }
   return (
-    <div className="App">
-      <img src={logo} alt='splitter' className='log'/>
+  
       <div class="wrapper">
-        <div className='container'>
-    
-          <Form 
-          bill={bill}
-          setBill={setBill}
-          setTip={setTip}
-          people={people}
-          setPeople={setPeople}
-          />
-          <Display 
-          total={total}
-          people={people}
-          calculatedTip={calculatedTip}
-          handleResetBtn={handleResetBtn}
-          />
+        <img src={logo} alt='splitter' className='log'/>
+        <div class="container">
+          <Form
+              bill={bill}
+              setBill={setBill}
+              setTip={setTip}
+              people={people}
+              setPeople={setPeople}
+            />
+            <Display
+              total={total}
+              people={people}
+              calculatedTip={calculatedTip}
+              handleResetBtn={handleResetBtn}
+            />
         </div>
+        
       </div>
-      
-    </div>
   );
 }
 
