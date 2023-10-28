@@ -125,9 +125,12 @@ const Form = () => {
           {/* <p className="error">{
             showPeepsError ? "Please enter numbers only" : ""
           }</p> */}
+          <p className="error">{
+            people === 0 ? "Can’t be zero" : ""
+          }</p>
         </div>
         <div className="number-wrapper">
-          <input type="text" className="number-input" id="people"/>
+          <input type="text" className="number-input" id="people" className={`number-input ${people === 0 ? 'number-error' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
           <img src={person} aria-hidden="true" className="icon" />
         </div>
       </div>
