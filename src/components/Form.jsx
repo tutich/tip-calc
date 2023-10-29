@@ -91,7 +91,7 @@ const Form = ({ bill, setBill, setTip, people, setPeople }) => {
           }</p> */}
         </div>
         <div className="number-wrapper">
-          <input type="text" className="number-input" id="bill" />
+          <input type="text" className="number-input" id="bill" onInput={(e) => setBill(+e.target.value)} value={bill}/>
           <img src={dollar} aria-hidden="true" className="icon" />
         </div>
       </div>
