@@ -1,7 +1,13 @@
 import dollar from '../components/images/icon-dollar.svg';
 import person from '../components/images/icon-person.svg';
 
-const Form = () => {
+const Form = ({ bill, setBill, setTip, people, setPeople }) => {
+
+  const tipBtns = [5, 10, 15, 25, 50];
+
+  const handleSelectedTip = (e) => {
+    setTip(+e.target.value);
+  }
     return(
         // <div className="form">
         //   <div className="label-grp">
@@ -94,23 +100,23 @@ const Form = () => {
         <p className="label">Selected Tip %</p>
         <div className="tip-amount-wrapper">
           <div className="tip-amount">
-            <input type="radio" nInput={handleSelectedTip} id="input1" name="tip" value=".05"/>
+            <input type="radio" onInput={handleSelectedTip} id="input1" name="tip" value=".05"/>
             <div className="tip-btn">5%</div>
           </div>
           <div className="tip-amount">
-            <input type="radio" nInput={handleSelectedTip} id="input2" name="tip" value=".1"/>
+            <input type="radio" onInput={handleSelectedTip} id="input2" name="tip" value=".1"/>
             <div className="tip-btn">10%</div>
           </div>
           <div className="tip-amount">
-            <input type="radio" nInput={handleSelectedTip} id="input3" name="tip" value=".15"/>
+            <input type="radio" onInput={handleSelectedTip} id="input3" name="tip" value=".15"/>
             <div className="tip-btn">15%</div>
           </div>
           <div className="tip-amount">
-            <input type="radio" nInput={handleSelectedTip} id="input4" name="tip" value=".25"/>
+            <input type="radio" onInput={handleSelectedTip} id="input4" name="tip" value=".25"/>
             <div className="tip-btn">25%</div>
           </div>
           <div className="tip-amount">
-            <input type="radio" nInput={handleSelectedTip} id="input5" name="tip" value=".5"/>
+            <input type="radio" onInput={handleSelectedTip} id="input5" name="tip" value=".5"/>
             <div className="tip-btn">50%</div>
           </div>
           <input type="text" onInput={handleSelectedTip} id="custom" className="number-input tip-custom"/>
