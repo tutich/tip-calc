@@ -99,7 +99,7 @@ justify-content: center;
 .btn:hover {
   transform: scale(1.1); 
 }
-.btn [:disabled] {
+.btn [disabled] {
   opacity: .4;
 }
 .value{
@@ -234,8 +234,6 @@ pointer-events: none;
     height: 100%;
   }
 }
-
-  
 
 .log{
   margin: 2em;
