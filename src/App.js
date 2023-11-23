@@ -30,9 +30,9 @@ function App() {
   }
   return (
   
-      <div class="wrapper">
+      <div className="wrapper">
         <img src={logo} alt='splitter' className='log'/>
-        <div clasName="container">
+        <div className="container">
           <Form
               bill={bill}
               setBill={setBill}
