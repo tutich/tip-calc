@@ -175,6 +175,9 @@ pointer-events: none;
   outline: none;
   box-shadow:  0 0 0 .2rem hsl(var(--white)), 0 0 0 .4rem hsl(var(--text));
 }
+.number-input.number-error:focus {
+  box-shadow: 0 0 0 .2rem hsl(var(--error));
+}
 .tip-section {
   display: grid;
   justify-items: start;
@@ -231,6 +234,10 @@ pointer-events: none;
   .display {
     grid-row: 1;
     height: 100%;
+  }
+  body {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 

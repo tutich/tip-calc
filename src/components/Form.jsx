@@ -8,6 +8,9 @@ const Form = ({ bill, setBill, setTip, people, setPeople }) => {
   const handleSelectedTip = (e) => {
     setTip(+e.target.value);
   }
+  const numberInput = {
+    border: people === '0' ? '1px solid red' : '1px solid initial',
+  };
     return(
         // <div className="form">
         //   <div className="label-grp">
@@ -136,7 +139,7 @@ const Form = ({ bill, setBill, setTip, people, setPeople }) => {
           }</p>
         </div>
         <div className="number-wrapper">
-          <input type="text" className="number-" id="people" className={`number-input ? ${people === 0 ? '"Can’t be zero"' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
+          <input type="text"  className={`number-input ${people === 0 ? 'number-error' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
           <img src={person} aria-hidden="true" className="icon" />
         </div>
       </div>
