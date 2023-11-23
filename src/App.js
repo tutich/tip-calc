@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import './App.css';
 import logo from './components/images/logo.svg';
 import Form from './components/Form';
-import Display from './components/Display.jsx';
+import Display from './components/Display';
 
 function App() {
   // const [count, setCount] = useState(0)
