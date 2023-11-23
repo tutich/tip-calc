@@ -39,6 +39,12 @@ width: 50%;
   place-items: center;
   gap: 4rem;
   }
+  .wrapperr{
+    display: grid;
+    place-items: center;
+    gap: 4rem;
+    }
+
 .container {
   display: grid;
   background: hsl(0, 0%, 100%);
@@ -64,6 +70,7 @@ background: hsl(183, 100%, 15%);
 padding: 1rem;
 border-radius: 1.2rem;
 margin-bottom: 5rem;
+height: 100%;
 }
 
 

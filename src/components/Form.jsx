@@ -136,7 +136,7 @@ const Form = ({ bill, setBill, setTip, people, setPeople }) => {
           }</p>
         </div>
         <div className="number-wrapper">
-          <input type="text" className="number-input" id="people" className={`number-input ? ${people === 0 ? '"Can’t be zero"' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
+          <input type="text" className="number-" id="people" className={`number-input ? ${people === 0 ? '"Can’t be zero"' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
           <img src={person} aria-hidden="true" className="icon" />
         </div>
       </div>

@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import './App.css';
 import logo from './components/images/logo.svg';
 import Form from './components/Form';
-import Display from './components/Display';
+import Display from './components/Display.jsx';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -30,7 +30,7 @@ function App() {
   }
   return (
   
-      <div className="wrapper">
+      <div className="wrapperr">
         <img src={logo} alt='splitter' className='log'/>
         <div className="container">
           <Form
