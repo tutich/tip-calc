@@ -32,6 +32,8 @@ background-color: hsl(185, 41%, 84%);
 height: 100vh;
 margin: 0 auto;
 width: 50%;
+place-content: center;
+place-items: center;
 align-items: center;
 }
 
