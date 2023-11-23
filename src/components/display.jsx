@@ -30,5 +30,7 @@ const Display = ({ calculatedTip, total, people, handleResetBtn }) => {
          </div>
         </div>
     )
-    }
-    export default Display;
+ }
+    
+ 
+ export default Display;

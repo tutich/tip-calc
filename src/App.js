@@ -32,7 +32,7 @@ function App() {
   
       <div class="wrapper">
         <img src={logo} alt='splitter' className='log'/>
-        <div class="container">
+        <div clasName="container">
           <Form
               bill={bill}
               setBill={setBill}

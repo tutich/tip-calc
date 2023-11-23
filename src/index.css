@@ -40,13 +40,14 @@ width: 50%;
   gap: 4rem;
   }
 .container {
-  background: hsl(0, 0%, 100%);
+  
+  /* background: hsl(0, 0%, 100%);
   padding: clamp(2rem, 3rem, 4rem);
   border-radius: 2rem;
-  box-shadow: 0 1rem 3rem hsl(183, 100%, 15%);
-  display: grid;
+  box-shadow: 0 1rem 3rem hsl(183, 100%, 15%); */
+  /* display: grid;
   grid-auto-flow: column;
-  gap: 3rem;
+  gap: 3rem; */
 }
 .form{
   
@@ -57,6 +58,7 @@ gap: var(--spacer);
 background: hsl(183, 100%, 15%);
 padding: 1rem;
 border-radius: 1.2rem;
+margin-bottom: 5rem;
 }
 
 
@@ -84,6 +86,9 @@ color: hsl(186, 14%, 43%);
 margin-top: 3em;
 font-size: 15px;
 transition: transform 0.3s;
+text-align: center;
+place-items: center;
+justify-content: center;
 }
 .btn:hover {
   transform: scale(1.1); /* Enlarge the button by 10% on hover */
@@ -108,6 +113,7 @@ transition: transform 0.3s;
   gap: .2rem;
   /* position: relative; */
   text-align: left;
+  padding-bottom: 5px;
 }
 [type="number"] {
   /* width: 100%; */
@@ -138,12 +144,18 @@ pointer-events: none;
   align-items: center;
 }
 .error {
-  color: hsl(var(--error));
+  color: red;
+  font-size: 13px;
+  font-weight: 700;
+ 
 }
 .number-input {
   width: 100%;
   font: inherit;
+  font-weight: 400;
   text-align: right;
+  border: 1px solid red;
+  /* color: hsl(183, 100%, 15%); */
   background-color: hsl(189, 41%, 97%);
   border: none;
   padding: .2rem .5rem;
@@ -164,7 +176,10 @@ pointer-events: none;
   justify-items: start;
   gap: .5rem;
 }
-
+ .tip-custom  {
+  font: inherit;
+  align-items: center;
+ }
 .tip-amount-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -188,31 +203,31 @@ pointer-events: none;
 }
 
 [name="tip"]:checked+.tip-btn {
-  background-color: hsl(var(--brand));
+  background-color: hsl(172, 67%, 45%);
 }
 
 .tip-btn {
   background-color: hsl(183, 100%, 15%);
-  color: hsl(189, 41%, 97%);
+  color: ;
   text-align: center;
   border-radius: 8px;
   padding: .2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .tip-amount-wrapper {
+@media only screen and (min-width: 768px) {
+  /* .tip-amount-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .container {
     grid-auto-flow: column;
-  }
+  } */
 }
-@media screen and(max-width: 768px) {
+/* @media screen and(max-width: 768px) {
   .container{
     display: block;
   }
-}
+} */
   
 
 .log{

@@ -119,8 +119,8 @@ const Form = ({ bill, setBill, setTip, people, setPeople }) => {
             <input type="radio" onInput={handleSelectedTip} id="input5" name="tip" value=".5"/>
             <div className="tip-btn">50%</div>
           </div>
-          <input type="text" onInput={handleSelectedTip} id="custom" className="number-input tip-custom"/>
-          <label htmlFor="custom" className="tip-custom-label">Custom</label>
+          <input type="text" onInput={handleSelectedTip} id="custom" className="number-input tip-custom" placeholder='Custom'/>
+          <label htmlFor="custom" className="tip-custom-label"></label>
 
         </div>
       </div>
@@ -136,7 +136,7 @@ const Form = ({ bill, setBill, setTip, people, setPeople }) => {
           }</p>
         </div>
         <div className="number-wrapper">
-          <input type="text" className="number-input" id="people" className={`number-input ${people === 0 ? 'number-error' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
+          <input type="text" className="number-input" id="people" className={`number-input ? ${people === 0 ? '"Can’t be zero"' : ""}`}  id="people" onInput={(e) => setPeople(+e.target.value)} value={people}/>
           <img src={person} aria-hidden="true" className="icon" />
         </div>
       </div>
