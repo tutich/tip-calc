@@ -172,9 +172,7 @@ pointer-events: none;
 }
 .number-input:focus {
   outline: none;
-  box-shadow:
-    0 0 0 .2rem hsl(var(--white)),
-    0 0 0 .4rem hsl(var(--text));
+  box-shadow:  0 0 0 .2rem hsl(var(--white)), 0 0 0 .4rem hsl(var(--text));
 }
 .tip-section {
   display: grid;
