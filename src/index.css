@@ -88,7 +88,7 @@ background: hsl(172, 67%, 45%);
 text-transform: uppercase;
 font: inherit;
 border-radius: 0.4em;
-width: 13rem;
+width: 100%;
 color: hsl(186, 14%, 43%);
 margin-top: 5em;
 font-size: 15px;
